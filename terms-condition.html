@@ -611,15 +611,15 @@
     <div class="chat__form-wrapper chat__bot">
         <button class="close__chat">&times;</button>
         <h4>Sign Up Now & Let’s Get Started</h4>
-        <form method="POST" action="sendmail.php" class="chat__form">
-            <input type="hidden" name="tag" value="ChatBot Form">
+        <form method="POST" action="https://formspree.io/f/mgvkvqnp" class="chat__form">
             <input type="text" required name="name" placeholder="Enter your name">
             <input type="email" required name="email" placeholder="Enter email here">
-            <input type="phone" required name="phone" placeholder="Phone Number">
-            <textarea name="brief" required id="" cols="30" rows="3" placeholder="Talk About Your Project"></textarea>
+            <input type="text" required name="phone" placeholder="Phone Number">
+            <textarea name="brief" required cols="30" rows="3" placeholder="Talk About Your Project"></textarea>
             
             <input type="submit" value="Submit">
         </form>
+        
     </div>
     <div class="chat-bot-box chat-opener">
         <img src="assets/images/favicon.png" alt="cht-img" style="max-width: 73%;margin-bottom: 25px;">
@@ -1291,6 +1291,33 @@ $(document).ready(function() {
 }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/680d3c7129a5a6191417c193/1ippr86j9';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+
+    // Wait until Tawk.to is loaded, then attach the click event
+    function setupLiveChatTrigger() {
+        if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.maximize === 'function') {
+            document.querySelector('.liveChat').addEventListener('click', function () {
+                Tawk_API.maximize();
+            });
+        } else {
+            // Retry if Tawk_API is not yet available
+            setTimeout(setupLiveChatTrigger, 500);
+        }
+    }
+
+    setupLiveChatTrigger();
+</script>
 
 <a target="_blank" href="https://wa.me/+13072892843" class="watsap-cht"><img src="assets/images/watsapp.jpg"></a>
 </body>

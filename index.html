@@ -73,8 +73,10 @@
 							</li>
 							<li>
 								<a href="javascript:void(0)" class="liveChat">
-									<img src="assets/images/chat-ico.png" alt="chat-ico">Live Chat </a>
+									<img src="assets/images/chat-ico.png" alt="chat-ico">Live Chat
+								</a>
 							</li>
+							
 						</ul>
 					</div>
 					<div class="col-md-2" style="z-index:999999">
@@ -107,11 +109,7 @@
 
 
 
-															<li>
-																<a href="cv-writing.html">
-																	<img src="assets/images/cv.png" alt="icon"
-																		class="cv-img">Cv Writing</a>
-															</li>
+
 
 															<li>
 																<a href="wordpress-custom ">
@@ -124,84 +122,41 @@
 																		alt="icon">Ecommerce Website </a>
 															</li>
 															<li>
-																<a href="logo ">
-																	<img src="assets/images/logo-ico.png"
-																		alt="icon">Logo Services </a>
+																<a href="ai-automation.html">
+																	<img src="assets/images/cv.png" class="cv-img"
+																		alt="icon">AI Automation </a>
 															</li>
-															<li>
-																<a href="magento ">
-																	<img src="assets/images/magento-ico.png"
-																		alt="icon">Magento </a>
-															</li>
+															
 
-															<li>
-																<a href="branding ">
-																	<img src="assets/images/branding-ico.png"
-																		alt="icon">Branding </a>
-															</li>
 														</ul>
 													</div>
 													<div class="col-md-4">
 														<ul class="dropdown-menulist">
-															<li>
-																<a href="seo ">
-																	<img src="assets/images/seo-ico.png" alt="icon">SEO
-																	Services </a>
-															</li>
-															<li>
-																<a href="mobile-app ">
-																	<img src="assets/images/app-ico.png"
-																		alt="icon">Mobile App Design </a>
-															</li>
+								
+
 															<li>
 																<a href="web-app.html">
 																	<img src="assets/images/web-app-ico.png"
-																		alt="icon">Web App </a>
+																		alt="icon">Web App Development</a>
 															</li>
+															
+														
 															<li>
-																<a href="open-cart ">
-																	<img src="assets/images/open-cart-ico.png"
-																		alt="icon">Open Cart </a>
-															</li>
-															<li>
-																<a href="woo-commerce ">
-																	<img src="assets/images/woocommerce-ico.png"
-																		alt="icon">woo commerce </a>
-															</li>
-															<li>
-																<a href="shopify ">
+																<a href="shopify.html">
 																	<img src="assets/images/sopify-ico.png"
-																		alt="icon">Shopify </a>
+																		alt="icon">Shopify Development</a>
 															</li>
 														</ul>
 													</div>
 													<div class="col-md-4">
 														<ul class="dropdown-menulist">
-															<li>
-																<a href="video-animation ">
-																	<img src="assets/images/vid-anim-ico.png"
-																		alt="icon">Video Animation </a>
-															</li>
+										
 															<li>
 																<a href="domain ">
 																	<img src="assets/images/domain-name-ico.png"
 																		alt="icon">Domain Hosting </a>
 															</li>
-															<li>
-																<a href="big-commerce ">
-																	<img src="assets/images/big-commerce-ico.png"
-																		alt="icon">Big Commerce </a>
-															</li>
-															<li>
-																<a href="react-native ">
-																	<img src="assets/images/react-native-ico.png"
-																		alt="icon">React Native </a>
-															</li>
-															<li>
-																<a href="social-media-marketing ">
-																	<img src="assets/images/smm-ico.png"
-																		alt="icon">Social Media Marketing </a>
-															</li>
+
 															<li>
 																<a href="website-maintenance.html">
 																	<img src="assets/images/maintenance-ico.png"
@@ -3830,16 +3785,15 @@
 		<div class="chat__form-wrapper chat__bot">
 			<button class="close__chat">&times;</button>
 			<h4>Sign Up Now & Let’s Get Started</h4>
-			<form method="POST" action="sendmail.php" class="chat__form">
-				<input type="hidden" name="tag" value="ChatBot Form">
+			<form method="POST" action="https://formspree.io/f/mgvkvqnp" class="chat__form">
 				<input type="text" required name="name" placeholder="Enter your name">
 				<input type="email" required name="email" placeholder="Enter email here">
-				<input type="phone" required name="phone" placeholder="Phone Number">
-				<textarea name="brief" required id="" cols="30" rows="3"
-					placeholder="Talk About Your Project"></textarea>
-
+				<input type="text" required name="phone" placeholder="Phone Number">
+				<textarea name="brief" required cols="30" rows="3" placeholder="Talk About Your Project"></textarea>
+				
 				<input type="submit" value="Submit">
 			</form>
+			
 		</div>
 		<div class="chat-bot-box chat-opener">
 			<img src="assets/images/favicon.png" alt="cht-img" style="max-width: 73%;margin-bottom: 25px;">
@@ -4399,6 +4353,33 @@
 			$zopim.livechat.window.show();
 		});
 	</script>
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"),
+				s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/680d3c7129a5a6191417c193/1ippr86j9';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	
+		// Wait until Tawk.to is loaded, then attach the click event
+		function setupLiveChatTrigger() {
+			if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.maximize === 'function') {
+				document.querySelector('.liveChat').addEventListener('click', function () {
+					Tawk_API.maximize();
+				});
+			} else {
+				// Retry if Tawk_API is not yet available
+				setTimeout(setupLiveChatTrigger, 500);
+			}
+		}
+	
+		setupLiveChatTrigger();
+	</script>
+	
 	<script>
 		$('.tab-custom').click(function (event) {
 			$(this).closest('li').siblings('li').children('a').removeClass('current');
