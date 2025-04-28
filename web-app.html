@@ -26,18 +26,6 @@
     }
     </style>
 
-    <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJJM489QQT"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-HJJM489QQT');
-    </script> -->
-
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -2344,6 +2332,34 @@ $(document).ready(function() {
         }
     ]
 }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/680d3c7129a5a6191417c193/1ippr86j9';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+
+    // Wait until Tawk.to is loaded, then attach the click event
+    function setupLiveChatTrigger() {
+        if (typeof Tawk_API !== 'undefined' && typeof Tawk_API.maximize === 'function') {
+            document.querySelector('.liveChat').addEventListener('click', function () {
+                Tawk_API.maximize();
+            });
+        } else {
+            // Retry if Tawk_API is not yet available
+            setTimeout(setupLiveChatTrigger, 500);
+        }
+    }
+
+    setupLiveChatTrigger();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
